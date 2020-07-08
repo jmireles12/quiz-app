@@ -14,10 +14,26 @@
             <li>Score: <span class="score">0</span></li>
         </ul>
     </header>
+
     <main>
-        <h2>Name of Quiz</h2>
-        <p>Description of quiz</p>
-        <button type="button" id="start">Start Quiz</button>
+        <div>
+            <div class="container">
+                <h2>Name of Quiz</h2>
+                <p>Description of quiz</p>
+                <div id="question-container" class="hide">
+                    <div id="question">Question</div>
+                    <div id="answer-buttons" class="btn-grid">
+                        <button class="btn">Answer 1</button>
+                        <button class="btn">Answer 2</button>
+                        <button class="btn">Answer 3</button>
+                        <button class="btn">Answer 4</button>
+                    </div>
+                </div>
+            <div class="controls">
+                <button type="button" id="start" class="start-btn btn">Start Quiz</button>
+            </div>
+            </div>
+        </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="quiz.js"></script>
