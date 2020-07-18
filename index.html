@@ -3,39 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML, CSS, & JS Quiz">
     <title>Quiz app</title>
     <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="shortcut icon" href="#">
 </head>
 <body>
     <header>
         <h1>Geography Quiz</h1>
-        <ul>
-            <li>Question: <span class="questionNumber">0</span>/10</li>
-            <li>Score: <span class="score">0</span></li>
-        </ul>
+        <section class="progress">
+            <span class="question-count"></span>
+            <span class="score"></span>
+        </section>
     </header>
 
-    <main>
-        <div>
-            <div class="container">
-                <h2>Basic knowledge about geography</h2>
-                <p>This quiz has simple and basic questions about the Earth that we all learned in school.</p>
-                <form id="question-container" class="hide">
-                    <div id="question">Question</div>
-                    <div id="answer-buttons" class="btn-grid">
-                        <button class="btn">Answer 1</button>
-                        <button class="btn">Answer 2</button>
-                        <button class="btn">Answer 3</button>
-                        <button class="btn">Answer 4</button>
-                    </div>
-                </form>
-            <div class="controls">
-                <button type="button" id="start" class="start-btn btn">Start Quiz</button>
-            </div>
-            </div>
-        </div>
+    <main role="main">
+        <section id="intro">
+            <h2>Basic knowledge about geography</h2>
+            <p>This quiz has simple and basic questions about the Earth that we all learned in school.</p>
+            <input type="button" value="Start" class="start-btn js-start-btn">
+        </section>
+        <section class="quiz-part">
+        </section>
+        <section class="final">
+
+        </section>
     </main>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="quiz.js"></script>
+    <script src="store.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,5 +1,4 @@
 body {
-
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #011638;
@@ -7,44 +6,105 @@ body {
 }
 
 header {
-    padding-top: 30px;
+    margin: 10px;
+    padding-top: 10px;
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 30px;
-    margin: 5%;
+    padding: 10px;
+    margin: 10px;
     border: solid black 0.1em;
     border-radius: 25px;
     background-color: #364156;
 }
 
+.correct .incorrect{
+    
+    margin-top: 10px;
+}
+
+form {
+    text-align: center;
+}
+
 .hide {
     display: none;
-    visibility: hidden;
 }
 
-.btn {
-    flex-direction: column;
-    justify-content: space-around;
+p {
+    font-size: 20px;
 }
 
-#question-container {
+span {
+    display: block;
+}
+
+.wrong {
+    display: block;
+    font-weight: bold;
+    background: red;
+    color: black;
+    max-width: 300px;
+    width: 300px;
+    height: 20px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.right {
     display: flex;
+    font-weight: bold;
+    background:green;
+    color: black;
+    max-width: 300px;
+    width: 300px;
+    height: 20px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.options {
     flex-direction: column;
-    align-items: center;
-}
-
-li {
-    list-style-type: none;
-}
-
-.btn-grid {
-    margin: auto;
+    justify-content: space-between;
+    display: block;
     padding: 10px;
 }
 
-@media all and (min-width: 600px) {
+.submit-btn {
+    display: block;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
 
+h4 {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    margin: auto;
+}
+
+main section section {
+    width: 100px;
+    height: 30px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
