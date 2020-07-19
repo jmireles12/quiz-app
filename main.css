@@ -19,7 +19,7 @@ main {
 }
 
 .correct .incorrect{
-    
+
     margin-top: 10px;
 }
 
@@ -81,6 +81,7 @@ input[type="radio"] {
     justify-content: space-between;
     display: block;
     padding: 10px;
+    text-align: left;
 }
 
 .submit-btn {
@@ -107,4 +108,19 @@ main section section {
     right: 0;
     top: 0;
     bottom: 0;
+}
+
+@media all and (min-width: 600px) { 
+
+    legend {
+        padding: 10px;
+        margin-top: 10px;
+    }
+}
+
+@media all and (min-width: 800px) {
+    body {
+        max-width: 800px;
+        margin: auto;
+    }
 }
